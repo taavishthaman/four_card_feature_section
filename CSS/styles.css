@@ -1,0 +1,73 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.titles {
+  text-align: center;
+}
+
+.top {
+  font-size: 2em;
+  color: hsl(229, 6%, 66%);
+  margin: 0;
+}
+
+.middle {
+  font-size: 2em;
+  margin: 0;
+}
+
+.bottom {
+  width: 40%;
+  margin: auto;
+  color: grey;
+}
+
+.card{
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-d{
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 10px;
+  position: relative;
+}
+
+.card-middle{
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.team-rule{
+  border-top: 5px solid red;
+}
+.superviser-rule{
+  border-top: 5px solid green;
+}
+.calculator-rule{
+  border-top: 5px solid blue;
+}
+.karma-rule{
+  border-top: 5px solid orange;
+}
+.card-subheading{
+  color: grey;
+}
+.card-image{
+  text-align: right;
+}
+
+.card-div-mobile{
+
+}
+
+.card-div-desktop{
+  
+}

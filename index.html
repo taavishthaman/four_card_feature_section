@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="CSS/styles.css"/>
+
+</head>
+<body>
+  <script>
+  $(document).ready(function () {
+  //your code here
+  var width = $(document).width();
+  if(width > 1500) {
+      $('.card-div-desktop').show();
+      $('.card-div-mobile').hide();
+    }
+     else{
+      $('.card-div-desktop').hide();
+      $('.card-div-mobile').show();
+    }
+  $(window).resize(function() {
+    var width = $(document).width();
+    console.log(width)
+    if(width > 1500) {
+        $('.card-div-desktop').show();
+        $('.card-div-mobile').hide();
+      }
+       else{
+        $('.card-div-desktop').hide();
+        $('.card-div-mobile').show();
+      }
+    })
+  });
+
+  </script>
+  <div class="titles">
+      <p class="top">
+        Reliable, efficient delivery.
+      </p>
+      <p class="middle">
+        <b>Powered by Technology.</b>
+      </p>
+      <br/>
+      <p class="bottom">
+        Our artificial intelligence powered tools use millions of project data points to ensure that your project is successful.
+      </p>
+  </div>
+  <div class="card-div-mobile">
+    <div class="card">
+      <hr class="team-rule"/>
+      <h2 class="card-heading">Team Builder</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-team-builder.svg"/>
+      </div>
+    </div>
+    <div class="card">
+      <hr class="superviser-rule"/>
+      <h2 class="card-heading">Superviser</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-supervisor.svg"/>
+      </div>
+    </div>
+    <div class="card">
+      <hr class="calculator-rule"/>
+      <h2 class="card-heading">Calculator</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-calculator.svg"/>
+      </div>
+    </div>
+    <div class="card">
+      <hr class="karma-rule"/>
+      <h2 class="card-heading">Karma</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-karma.svg"/>
+      </div>
+    </div>
+  </div>
+  <div class="card-div-desktop">
+    <div class="card-d" style="margin : auto;">
+      <hr class="team-rule"/>
+      <h2 class="card-heading">Team Builder</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-team-builder.svg"/>
+      </div>
+    </div>
+    <div class="card-d" style="margin-left: 20%;">
+      <hr class="superviser-rule"/>
+      <h2 class="card-heading">Superviser</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-supervisor.svg"/>
+      </div>
+    </div>
+    <div class="card-d" style="margin-left : 50%; bottom : 245px;">
+      <hr class="calculator-rule"/>
+      <h2 class="card-heading">Calculator</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-calculator.svg"/>
+      </div>
+    </div>
+    <div class="card-d" style="margin-left : 35%; bottom : 245px;">
+      <hr class="karma-rule"/>
+      <h2 class="card-heading">Karma</h2>
+      <p class="card-subheading">Scans our talent network to create the optimal team for your project.</p>
+      <div class="card-image">
+        <img src="images/icon-karma.svg"/>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
